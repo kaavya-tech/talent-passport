@@ -1,0 +1,123 @@
+.tp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.tp-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Sizes */
+.tp-button--sm {
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-xs);
+  height: 32px;
+}
+
+.tp-button--md {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+  height: 40px;
+}
+
+.tp-button--lg {
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--font-size-base);
+  height: 48px;
+}
+
+/* Full Width */
+.tp-button--full {
+  width: 100%;
+}
+
+/* Variants */
+.tp-button--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+  border-color: var(--color-primary);
+}
+
+.tp-button--primary:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.tp-button--primary:active:not(:disabled) {
+  background-color: var(--color-primary-active);
+}
+
+.tp-button--dark {
+  background-color: var(--color-dark-sage);
+  color: var(--color-card);
+  border-color: var(--color-dark-sage);
+}
+
+.tp-button--dark:hover:not(:disabled) {
+  background-color: var(--color-dark-sage-hover);
+  border-color: var(--color-dark-sage-hover);
+}
+
+.tp-button--secondary {
+  background-color: var(--color-light-sage);
+  color: var(--color-text-primary);
+  border-color: var(--color-light-sage);
+}
+
+.tp-button--secondary:hover:not(:disabled) {
+  background-color: var(--color-light-sage-hover);
+  border-color: var(--color-light-sage-hover);
+}
+
+.tp-button--outline {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.tp-button--outline:hover:not(:disabled) {
+  border-color: var(--color-dark-sage);
+  background-color: var(--color-card);
+  color: var(--color-dark-sage);
+}
+
+.tp-button--ghost {
+  background-color: transparent;
+  color: var(--color-text-secondary);
+}
+
+.tp-button--ghost:hover:not(:disabled) {
+  background-color: var(--color-light-sage);
+  color: var(--color-text-primary);
+}
+
+.tp-button--danger {
+  background-color: var(--color-error-bg);
+  color: var(--color-error);
+  border-color: var(--color-error-border);
+}
+
+.tp-button--danger:hover:not(:disabled) {
+  background-color: var(--color-error);
+  color: var(--color-surface-pure);
+}
+
+.tp-button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+}

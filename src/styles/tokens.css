@@ -1,0 +1,137 @@
+/**
+ * TALENT PASSPORT — CENTRALIZED DESIGN TOKENS
+ * 
+ * All brand colors, typography, spacing, border radiuses, and shadows
+ * are centralized in this file. Changing values here automatically
+ * updates the entire application visual identity.
+ */
+
+:root {
+  /* ==========================================================================
+     BRAND COLOR PALETTE: Sage Green + Ivory
+     ========================================================================== */
+  --color-primary: #8FAF9A;          /* Primary Sage Green */
+  --color-primary-sage: #8FAF9A;     /* Alias for primary sage */
+  --color-primary-hover: #7E9F8A;    /* Slightly deeper sage on hover */
+  --color-primary-active: #6E8F7A;   /* Pressed state */
+  --color-primary-subtle: #F0F5F2;   /* Ultra-light sage tint for highlights */
+
+  --color-dark-sage: #557463;        /* Dark Sage for strong contrast & buttons */
+  --color-dark-sage-hover: #456152;  /* Dark Sage hover state */
+  --color-dark-sage-active: #395043; /* Dark Sage active state */
+
+  --color-light-sage: #DDE8DF;       /* Light Sage for subtle backgrounds/accents */
+  --color-light-sage-hover: #D1DFD3; /* Light Sage interactive hover */
+
+  --color-ivory: #F8F5EC;            /* Ivory for primary page background */
+  --color-card: #FFFDF8;             /* Warm Card / Container background */
+  --color-surface-pure: #FFFFFF;     /* Pure white for inner inputs & highlights */
+
+  /* ==========================================================================
+     TYPOGRAPHY COLORS
+     ========================================================================== */
+  --color-text-primary: #26352D;     /* Deep forest slate for primary reading */
+  --color-primary-text: #26352D;     /* Alias for primary text */
+  --color-text-secondary: #66736B;   /* Calm secondary text for subtitles & labels */
+  --color-secondary-text: #66736B;   /* Alias for secondary text */
+  --color-text-muted: #8E9A92;       /* Muted text for placeholders & hints */
+  --color-text-inverse: #FFFDF8;     /* Inverted text on dark backgrounds */
+  --color-text-brand: #456152;       /* Brand accent text */
+
+  /* ==========================================================================
+     BORDERS & DIVIDERS
+     ========================================================================== */
+  --color-border: #D9DED7;           /* Standard structural border */
+  --color-border-subtle: #E8ECE6;    /* Subtle dividers and light separators */
+  --color-border-hover: #B8C2B5;     /* Hovered border on interactive elements */
+  --color-border-focus: #557463;     /* Focused border for form inputs */
+
+  /* ==========================================================================
+     FUNCTIONAL & STATUS TONES (Muted, harmonized with Sage Green)
+     ========================================================================== */
+  --color-success: #4E7C5E;
+  --color-success-bg: #EDF5F0;
+  --color-success-border: #C8DECFC;
+
+  --color-warning: #B38637;
+  --color-warning-bg: #FBF6EB;
+  --color-warning-border: #E8D8B6;
+
+  --color-error: #B55454;
+  --color-error-bg: #FBEFEF;
+  --color-error-border: #ECCBCB;
+
+  --color-info: #557688;
+  --color-info-bg: #EEF4F7;
+  --color-info-border: #CCDCE4;
+
+  /* ==========================================================================
+     SPACING SCALE (4px Base Unit)
+     ========================================================================== */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+
+  /* ==========================================================================
+     TYPOGRAPHY SCALE
+     ========================================================================== */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace;
+
+  --font-size-xs: 0.75rem;     /* 12px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;    /* 18px */
+  --font-size-xl: 1.25rem;     /* 20px */
+  --font-size-2xl: 1.5rem;     /* 24px */
+  --font-size-3xl: 1.875rem;   /* 30px */
+  --font-size-4xl: 2.25rem;    /* 36px */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
+
+  /* ==========================================================================
+     BORDER RADIUS (Clean, subtle, avoiding cartoonish bubbles)
+     ========================================================================== */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px; /* Reserved for circular avatars and badge pills */
+
+  /* ==========================================================================
+     SHADOWS (Calm, soft, and restrained)
+     ========================================================================== */
+  --shadow-none: none;
+  --shadow-sm: 0 1px 2px rgba(38, 53, 45, 0.05);
+  --shadow-md: 0 4px 12px rgba(38, 53, 45, 0.06);
+  --shadow-lg: 0 10px 24px rgba(38, 53, 45, 0.08);
+
+  /* ==========================================================================
+     LAYOUT MEASUREMENTS
+     ========================================================================== */
+  --sidebar-width: 256px;
+  --sidebar-collapsed-width: 72px;
+  --navbar-height: 68px;
+  --max-content-width: 1200px;
+
+  /* ==========================================================================
+     TRANSITIONS
+     ========================================================================== */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+}

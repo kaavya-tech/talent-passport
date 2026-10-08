@@ -1,0 +1,74 @@
+.tp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-full);
+  border: 1px solid transparent;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+/* Sizes */
+.tp-badge--sm {
+  padding: 2px var(--space-2);
+  font-size: var(--font-size-xs);
+  line-height: 1.2;
+}
+
+.tp-badge--md {
+  padding: 3px var(--space-3);
+  font-size: var(--font-size-sm);
+  line-height: 1.3;
+}
+
+/* Variants using design tokens */
+.tp-badge--sage {
+  background-color: var(--color-light-sage);
+  color: var(--color-dark-sage);
+  border-color: var(--color-primary);
+}
+
+.tp-badge--dark {
+  background-color: var(--color-dark-sage);
+  color: var(--color-card);
+  border-color: var(--color-dark-sage);
+}
+
+.tp-badge--neutral {
+  background-color: var(--color-card);
+  color: var(--color-text-secondary);
+  border-color: var(--color-border);
+}
+
+.tp-badge--success {
+  background-color: var(--color-success-bg);
+  color: var(--color-success);
+  border-color: var(--color-success-border);
+}
+
+.tp-badge--warning {
+  background-color: var(--color-warning-bg);
+  color: var(--color-warning);
+  border-color: var(--color-warning-border);
+}
+
+.tp-badge--error {
+  background-color: var(--color-error-bg);
+  color: var(--color-error);
+  border-color: var(--color-error-border);
+}
+
+.tp-badge--info {
+  background-color: var(--color-info-bg);
+  color: var(--color-info);
+  border-color: var(--color-info-border);
+}
+
+.tp-badge__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background-color: currentColor;
+}
